@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Code2, Brain, Palette, Database } from "lucide-react";
 
@@ -29,17 +28,6 @@ const About = () => {
       bio: "Expert in scalable systems and voice technology integration. Building the infrastructure for accessible education.",
       icon: Database,
     },
-  ];
-
-  const technologies = [
-    { name: "React", category: "Frontend", description: "Modern, accessible UI components" },
-    { name: "TypeScript", category: "Frontend", description: "Type-safe development" },
-    { name: "OpenAI GPT", category: "AI", description: "Flashcard generation" },
-    { name: "Web Speech API", category: "Voice", description: "Speech recognition & synthesis" },
-    { name: "Node.js", category: "Backend", description: "Server-side processing" },
-    { name: "Express", category: "Backend", description: "API development" },
-    { name: "PostgreSQL", category: "Database", description: "Data persistence" },
-    { name: "Twilio", category: "Voice", description: "Phone call integration" },
   ];
 
   return (
@@ -133,34 +121,6 @@ const About = () => {
                 </Card>
               );
             })}
-          </div>
-        </section>
-
-        {/* Technology Stack */}
-        <section className="mb-20" aria-labelledby="tech-heading">
-          <div className="mb-12 text-center">
-            <h2 id="tech-heading" className="mb-4 text-4xl font-bold text-foreground">
-              Technology Stack
-            </h2>
-            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Built with modern, accessible technologies
-            </p>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {technologies.map((tech, index) => (
-              <Card key={index}>
-                <CardContent className="p-4">
-                  <div className="mb-2 flex items-center justify-between">
-                    <h3 className="font-semibold text-foreground">{tech.name}</h3>
-                    <Badge variant="outline" className="text-xs">
-                      {tech.category}
-                    </Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{tech.description}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </section>
 
