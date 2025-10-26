@@ -36,7 +36,7 @@ const Landing = () => {
           
           <div className="container relative z-10 mx-auto px-4 text-center">
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl animate-fade-in-up">
-              <span className="text-balance">MEET Braillience</span>
+              <span className="text-balance">Meet Braillience</span>
             </h1>
             
             <p className="mx-auto mb-8 max-w-3xl text-lg text-white/90 md:text-xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
