@@ -55,7 +55,7 @@ export const Footer = () => {
             <h3 className="mb-4 text-sm font-semibold text-foreground">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-foreground">
+                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
                   Privacy Policy
                 </Link>
               </li>
@@ -70,9 +70,9 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-muted-foreground hover:text-foreground">
+                <a href="mailto:braillienceai@gmail.com" className="text-sm text-muted-foreground hover:text-foreground">
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

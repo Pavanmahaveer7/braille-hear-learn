@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Mission from "./pages/Mission";
 import About from "./pages/About";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/mission" element={<Mission />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/privacy" element={<Privacy />} />
                 
                 {/* Protected Professor Routes - Coming soon */}
                 <Route element={<ProtectedRoute allowedRoles={["professor"]} />}>

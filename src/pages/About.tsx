@@ -179,7 +179,7 @@ const About = () => {
               size="lg"
               className="bg-white text-primary hover:bg-white/90"
             >
-              <a href="mailto:team@braillience.ai">
+              <a href="mailto:braillienceai@gmail.com">
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us
               </a>
