@@ -55,17 +55,6 @@ const Landing = () => {
                   Professor Login
                 </Link>
               </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white bg-transparent text-white hover:bg-white/10"
-              >
-                <Link to="/signup?role=student">
-                  <BookOpen className="mr-2 h-5 w-5" />
-                  Student Login
-                </Link>
-              </Button>
             </div>
 
             <div className="flex items-center justify-center gap-2 text-sm animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
