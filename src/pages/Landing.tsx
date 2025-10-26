@@ -12,6 +12,7 @@ import {
   Users,
   Trophy,
 } from "lucide-react";
+import brailleKeyboard from "@/assets/braille-keyboard-hero.jpg";
 
 const Landing = () => {
   return (
@@ -19,7 +20,18 @@ const Landing = () => {
       <main id="main-content">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary via-accent to-secondary py-20 text-white">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base:utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 120\"><path d=\"M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z\" fill=\"rgba(255,255,255,0.1)\"/></svg>')] bg-bottom bg-no-repeat opacity-20"
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 opacity-20">
+            <img 
+              src={brailleKeyboard} 
+              alt="" 
+              className="h-full w-full object-cover"
+              aria-hidden="true"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-accent/80 to-secondary/80" />
+          </div>
+          
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMCI+PHBhdGggZD0iTTMyMS4zOSA1Ni40NGM1OC0xMC43OSAxMTQuMTYtMzAuMTMgMTcyLTQxLjg2IDgyLjM5LTE2LjcyIDE2OC4xOS0xNy43MyAyNTAuNDUtLjM5QzgyMy43OCAzMSA5MDYuNjcgNzIgOTg1LjY2IDkyLjgzYzcwLjA1IDE4LjQ4IDE0Ni41MyAyNi4wOSAyMTQuMzQgM1YwSDB2MjcuMzVhNjAwLjIxIDYwMC4yMSAwIDAwMzIxLjM5IDI5LjA5eiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+')] bg-bottom bg-no-repeat opacity-20"
             aria-hidden="true"
           />
           
