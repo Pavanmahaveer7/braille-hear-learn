@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="h-16 w-16 flex items-center justify-center bg-background rounded-lg shadow-sm border border-border">
+              <div className="h-16 w-16 flex items-center justify-center bg-muted/30 rounded-lg">
                 <img 
                   src={logo} 
                   alt="Braillience Logo" 
