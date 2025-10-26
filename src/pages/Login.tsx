@@ -77,7 +77,7 @@ const Login = () => {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
           <CardDescription>
-            Sign in to your Brilliance account
+            Sign in to your Braillience account
           </CardDescription>
         </CardHeader>
         <CardContent>

@@ -55,7 +55,7 @@ const About = () => {
             />
           </div>
           <h1 className="mb-6 text-5xl font-bold text-foreground md:text-6xl animate-fade-in-up">
-            Meet the Team Behind <span className="text-primary">Brilliance</span>
+            Meet the Team Behind <span className="text-primary">Braillience</span>
           </h1>
           <p className="mx-auto max-w-3xl text-xl text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             We're a team of technologists, educators, and accessibility advocates united by a 
@@ -73,7 +73,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-lg text-foreground/80">
                   <p>
-                    Brilliance was born at <strong className="text-foreground">Cal Hacks 12.0</strong> from 
+                    Braillience was born at <strong className="text-foreground">Cal Hacks 12.0</strong> from 
                     a simple observation: while AI is revolutionizing education, blind and visually impaired 
                     students are often left behind by the very technologies meant to help them learn.
                   </p>
@@ -83,7 +83,7 @@ const About = () => {
                     could be instantly transformed into an interactive, voice-guided learning experience?
                   </p>
                   <p>
-                    Over 48 hours, our team built the foundation for Brilliance—a platform that combines 
+                    Over 48 hours, our team built the foundation for Braillience—a platform that combines 
                     artificial intelligence, voice technology, and accessible design to create a seamless 
                     learning experience for blind students. But this is just the beginning of our journey.
                   </p>

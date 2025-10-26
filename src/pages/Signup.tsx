@@ -106,7 +106,7 @@ const Signup = () => {
       
       toast({
         title: "Account created!",
-        description: "Welcome to Brilliance. You're all set!",
+        description: "Welcome to Braillience. You're all set!",
       });
 
       const redirectPath = formData.role === "professor" ? "/professor/dashboard" : "/student/dashboard";
@@ -144,7 +144,7 @@ const Signup = () => {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold">Create Your Account</CardTitle>
           <CardDescription>
-            Join Brilliance to start your accessible learning journey
+            Join Braillience to start your accessible learning journey
           </CardDescription>
         </CardHeader>
         <CardContent>

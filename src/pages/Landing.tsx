@@ -36,7 +36,7 @@ const Landing = () => {
           
           <div className="container relative z-10 mx-auto px-4 text-center">
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl animate-fade-in-up">
-              <span className="text-balance">MEET Brilliance</span>
+              <span className="text-balance">MEET Braillience</span>
             </h1>
             
             <p className="mx-auto mb-8 max-w-3xl text-lg text-white/90 md:text-xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
@@ -194,7 +194,7 @@ const Landing = () => {
         <section className="py-20" aria-labelledby="benefits-heading">
           <div className="container mx-auto px-4">
             <h2 id="benefits-heading" className="mb-12 text-center text-4xl font-bold text-foreground">
-              Why Choose Brilliance?
+              Why Choose Braillience?
             </h2>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

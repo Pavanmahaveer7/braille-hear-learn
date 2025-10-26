@@ -109,7 +109,7 @@ const Mission = () => {
               Our Core Values
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              These principles guide everything we do at Brilliance
+              These principles guide everything we do at Braillience
             </p>
           </div>
 
@@ -152,7 +152,7 @@ const Mission = () => {
             We envision a world where every educational resource is automatically accessible, 
             where AI serves as a bridge rather than a barrier, and where blind and visually 
             impaired students have the same opportunities to excel as their peers. 
-            Through Brilliance, we're taking the first steps toward that future.
+            Through Braillience, we're taking the first steps toward that future.
           </p>
           <div className="mt-8">
             <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
