@@ -5,7 +5,6 @@ import {
   Mic,
   Brain,
   Phone,
-  Star,
   CheckCircle,
   ArrowRight,
   BookOpen,
@@ -58,12 +57,10 @@ const Landing = () => {
             </div>
 
             <div className="flex items-center justify-center gap-2 text-sm animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="text-white/90">4.9/5 from students and educators</span>
+              <blockquote className="text-white/90 italic">
+                "Access to communication in the widest sense is access to knowledge, and that is vitally important for us."
+                <footer className="mt-2 text-white/70 text-xs not-italic">— Louis Braille</footer>
+              </blockquote>
             </div>
           </div>
         </section>
