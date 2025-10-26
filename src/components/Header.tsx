@@ -67,11 +67,11 @@ export const Header = () => {
       
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-3" aria-label="Braillience Home">
-          <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2 transition-all hover:scale-105 hover:shadow-lg">
+          <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 backdrop-blur-sm flex items-center justify-center transition-all hover:scale-105 hover:shadow-lg">
             <img 
               src={logo} 
               alt="Braillience Logo" 
-              className="h-full w-full object-contain"
+              className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
               style={{ mixBlendMode: 'multiply' }}
             />
           </div>
