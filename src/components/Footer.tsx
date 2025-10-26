@@ -12,11 +12,14 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src={logo} 
-                alt="Braillience Logo" 
-                className="h-20 w-20 object-contain"
-              />
+              <div className="h-20 w-20 flex items-center justify-center">
+                <img 
+                  src={logo} 
+                  alt="Braillience Logo" 
+                  className="h-full w-full object-contain drop-shadow-sm"
+                  style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+                />
+              </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">

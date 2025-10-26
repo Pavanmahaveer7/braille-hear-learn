@@ -67,11 +67,14 @@ export const Header = () => {
       
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-3 transition-all hover:opacity-80" aria-label="Braillience Home">
-          <img 
-            src={logo} 
-            alt="Braillience Logo" 
-            className="h-14 w-14 object-contain"
-          />
+          <div className="h-14 w-14 flex items-center justify-center">
+            <img 
+              src={logo} 
+              alt="Braillience Logo" 
+              className="h-full w-full object-contain drop-shadow-sm"
+              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+            />
+          </div>
           <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Braillience
           </span>
