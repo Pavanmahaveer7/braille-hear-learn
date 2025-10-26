@@ -67,7 +67,7 @@ export const Header = () => {
       
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-3" aria-label="Braillience Home">
-          <div className="relative h-12 w-12 sm:h-14 sm:w-14 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2 transition-all hover:scale-105 hover:shadow-lg">
+          <div className="relative h-16 w-16 sm:h-20 sm:w-20 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2 transition-all hover:scale-105 hover:shadow-lg">
             <img 
               src={logo} 
               alt="Braillience Logo" 
@@ -75,7 +75,7 @@ export const Header = () => {
               style={{ mixBlendMode: 'multiply' }}
             />
           </div>
-          <span className="hidden text-xl font-bold text-foreground sm:inline-block">
+          <span className="hidden text-2xl font-bold text-foreground sm:inline-block">
             Braillience
           </span>
         </Link>

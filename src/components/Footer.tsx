@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="h-14 w-14 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2">
+              <div className="h-20 w-20 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2">
                 <img 
                   src={logo} 
                   alt="Braillience Logo" 
@@ -20,7 +20,7 @@ export const Footer = () => {
                   style={{ mixBlendMode: 'multiply' }}
                 />
               </div>
-              <span className="text-lg font-bold text-foreground">Braillience</span>
+              <span className="text-xl font-bold text-foreground">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering accessible education through AI-driven learning.
