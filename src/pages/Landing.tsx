@@ -21,17 +21,17 @@ const Landing = () => {
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary via-accent to-secondary py-20 text-white">
           {/* Background Image with Overlay */}
-          <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0">
             <img 
               src={brailleKeyboard} 
               alt="" 
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover opacity-40 mix-blend-soft-light"
               aria-hidden="true"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-accent/80 to-secondary/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-accent/50 to-secondary/60" />
           </div>
           
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMCI+PHBhdGggZD0iTTMyMS4zOSA1Ni40NGM1OC0xMC43OSAxMTQuMTYtMzAuMTMgMTcyLTQxLjg2IDgyLjM5LTE2LjcyIDE2OC4xOS0xNy43MyAyNTAuNDUtLjM5QzgyMy43OCAzMSA5MDYuNjcgNzIgOTg1LjY2IDkyLjgzYzcwLjA1IDE4LjQ4IDE0Ni41MyAyNi4wOSAyMTQuMzQgM1YwSDB2MjcuMzVhNjAwLjIxIDYwMC4yMSAwIDAwMzIxLjM5IDI5LjA5eiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+')] bg-bottom bg-no-repeat opacity-20"
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMCI+PHBhdGggZD0iTTMyMS4zOSA1Ni40NGM1OC0xMC43OSAxMTQuMTYtMzAuMTMgMTcyLTQxLjg2IDgyLjM5LTE2LjcyIDE2OC4xOS0xNy43MyAyNTAuNDUtLjM5QzgyMy43OCAzMSA5MDYuNjcgNzIgOTg1LjY2IDkyLjgzYzcwLjA1IDE4LjQ4IDE0Ni41MyAyNi4wOSAyMTQuMzQgM1YwSDB2MjcuMzVhNjAwLjIxIDYwMC4yMSAwIDAwMzIxLjM5IDI5LjA5eiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+')] bg-bottom bg-no-repeat opacity-30"
             aria-hidden="true"
           />
           
