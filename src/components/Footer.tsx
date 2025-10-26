@@ -15,9 +15,9 @@ export const Footer = () => {
               <img 
                 src={logo} 
                 alt="Braillience Logo" 
-                className="h-16 w-16 object-contain"
+                className="h-20 w-20 object-contain"
               />
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Braillience</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering accessible education through AI-driven learning.

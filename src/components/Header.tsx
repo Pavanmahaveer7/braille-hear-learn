@@ -70,9 +70,9 @@ export const Header = () => {
           <img 
             src={logo} 
             alt="Braillience Logo" 
-            className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+            className="h-16 w-16 sm:h-20 sm:w-20 object-contain"
           />
-          <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Braillience
           </span>
         </Link>
