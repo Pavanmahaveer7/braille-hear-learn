@@ -88,6 +88,7 @@ export const Footer = () => {
                 className="text-muted-foreground transition-colors hover:text-foreground"
                 aria-label="GitHub"
               >
+                {/* TODO: Update with actual GitHub link */}
                 <Github className="h-5 w-5" />
               </a>
               <a
@@ -110,8 +111,8 @@ export const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
-              <a href="mailto:feedback@braillience.ai" className="hover:text-foreground">
-                feedback@braillience.ai
+              <a href="mailto:braillienceai@gmail.com" className="hover:text-foreground">
+                braillienceai@gmail.com
               </a>
             </p>
           </div>

@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
-  Sparkles,
   Mic,
   Brain,
   Phone,
@@ -26,14 +24,6 @@ const Landing = () => {
           />
           
           <div className="container relative z-10 mx-auto px-4 text-center">
-            <Badge
-              variant="secondary"
-              className="mb-6 bg-white/20 text-white hover:bg-white/30"
-            >
-              <Sparkles className="mr-2 h-4 w-4" />
-              Powered by AI for Cal Hacks 12.0
-            </Badge>
-            
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl animate-fade-in-up">
               <span className="text-balance">MEET Brilliance</span>
             </h1>
