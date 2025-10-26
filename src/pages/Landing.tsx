@@ -56,10 +56,10 @@ const Landing = () => {
               </Button>
             </div>
 
-            <div className="flex items-center justify-center gap-2 text-sm animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <blockquote className="text-white/90 italic">
+            <div className="flex items-center justify-center gap-2 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+              <blockquote className="text-white/90 italic text-lg md:text-xl max-w-3xl">
                 "Access to communication in the widest sense is access to knowledge, and that is vitally important for us."
-                <footer className="mt-2 text-white/70 text-xs not-italic">— Louis Braille</footer>
+                <footer className="mt-3 text-white/70 text-sm not-italic">— Louis Braille</footer>
               </blockquote>
             </div>
           </div>
