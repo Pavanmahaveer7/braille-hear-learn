@@ -197,7 +197,7 @@ const Landing = () => {
         <section className="py-20" aria-labelledby="benefits-heading">
           <div className="container mx-auto px-4">
             <h2 id="benefits-heading" className="mb-12 text-center text-4xl font-bold text-foreground">
-              Why Choose Braillience AI?
+              Why Choose Brilliance?
             </h2>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

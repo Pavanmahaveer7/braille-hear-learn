@@ -14,7 +14,7 @@ export const Footer = () => {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
                 <span className="text-xl font-bold text-white" aria-hidden="true">B</span>
               </div>
-              <span className="text-lg font-bold text-foreground">Braillience AI</span>
+              <span className="text-lg font-bold text-foreground">Brilliance</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering accessible education through AI-driven learning.
@@ -119,7 +119,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>© {currentYear} Braillience AI. All rights reserved.</p>
+          <p>© {currentYear} Brilliance. All rights reserved.</p>
           <p className="mt-2">
             Built with ❤️ for <span className="font-semibold text-primary">Cal Hacks 12.0</span>
           </p>

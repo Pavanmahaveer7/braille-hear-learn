@@ -1,4 +1,4 @@
-// Type definitions for Braillience AI
+// Type definitions for Brilliance
 
 export type UserRole = "professor" | "student";
 
