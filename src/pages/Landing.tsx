@@ -93,8 +93,8 @@ const Landing = () => {
 
               <Card className="hover-lift">
                 <CardContent className="p-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
-                    <Mic className="h-6 w-6 text-secondary" aria-hidden="true" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                    <Mic className="h-6 w-6 text-accent" aria-hidden="true" />
                   </div>
                   <h3 className="mb-2 text-xl font-semibold">Voice-Guided Learning</h3>
                   <p className="text-muted-foreground">
