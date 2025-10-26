@@ -22,14 +22,14 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - Warm Amber for warmth and inclusivity */
-    --primary: 25 95% 53%;
+    /* Primary - Tech Orange inspired by circuit boards */
+    --primary: 18 85% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 35 95% 60%;
+    --primary-glow: 18 90% 65%;
 
-    /* Secondary - Golden Yellow for brightness and hope */
-    --secondary: 45 93% 47%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Warm Orange complement */
+    --secondary: 18 100% 97%;
+    --secondary-foreground: 18 85% 25%;
 
     /* Success - Vibrant Green */
     --success: 142 76% 36%;
@@ -39,8 +39,8 @@ All colors MUST be HSL.
     --muted: 210 20% 88%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent - Terracotta for tactile warmth */
-    --accent: 15 85% 55%;
+    /* Accent - Deep Orange for contrast */
+    --accent: 30 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive - Clear Red */
@@ -50,15 +50,19 @@ All colors MUST be HSL.
     /* Borders & Inputs */
     --border: 214 32% 85%;
     --input: 214 32% 85%;
-    --ring: 25 95% 53%;
+    --ring: 18 85% 55%;
 
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Gradients for visual interest */
-    --gradient-hero: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 93% 47%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 96%));
-    --gradient-accent: linear-gradient(90deg, hsl(25 95% 53%), hsl(15 85% 55%));
+    /* Gradients for visual interest - Circuit board inspired */
+    --gradient-hero: linear-gradient(135deg, hsl(18 85% 55%), hsl(30 100% 50%), hsl(18 90% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(18 100% 97%));
+    --gradient-accent: linear-gradient(90deg, hsl(18 85% 55%), hsl(30 100% 50%));
+    
+    /* Tech-inspired shadows with orange glow */
+    --shadow-tech: 0 4px 20px -4px hsl(18 85% 55% / 0.25);
+    --shadow-glow: 0 0 40px hsl(18 90% 65% / 0.4);
     
     /* Shadows for elevation */
     --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
@@ -91,10 +95,10 @@ All colors MUST be HSL.
     --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 25 95% 58%;
+    --primary: 18 85% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 93% 52%;
+    --secondary: 18 85% 65%;
     --secondary-foreground: 0 0% 100%;
 
     --success: 142 76% 45%;
@@ -103,7 +107,7 @@ All colors MUST be HSL.
     --muted: 217 33% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 15 85% 60%;
+    --accent: 30 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 50%;
@@ -111,7 +115,7 @@ All colors MUST be HSL.
 
     --border: 217 33% 25%;
     --input: 217 33% 25%;
-    --ring: 25 95% 58%;
+    --ring: 18 85% 55%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -224,15 +228,15 @@ All colors MUST be HSL.
   @keyframes pulse-ring {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 hsl(25 95% 53% / 0.7);
+      box-shadow: 0 0 0 0 hsl(18 85% 55% / 0.7);
     }
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px hsl(25 95% 53% / 0);
+      box-shadow: 0 0 0 10px hsl(18 85% 55% / 0);
     }
     100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 hsl(25 95% 53% / 0);
+      box-shadow: 0 0 0 0 hsl(18 85% 55% / 0);
     }
   }
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Github, Twitter, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +11,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-                <span className="text-xl font-bold text-white" aria-hidden="true">B</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logo} 
+                alt="Braillience Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-lg font-bold text-foreground">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">

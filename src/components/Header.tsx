@@ -12,6 +12,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { LogOut, User, Settings, Menu, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const { user, logout, isAuthenticated } = useAuth();
@@ -65,12 +66,12 @@ export const Header = () => {
       </a>
       
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center space-x-2" aria-label="Braillience Home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-            <span className="text-xl font-bold text-white" aria-hidden="true">
-              B
-            </span>
-          </div>
+        <Link to="/" className="flex items-center space-x-3" aria-label="Braillience Home">
+          <img 
+            src={logo} 
+            alt="Braillience Logo" 
+            className="h-10 w-10 object-contain transition-transform hover:scale-105"
+          />
           <span className="hidden text-xl font-bold text-foreground sm:inline-block">
             Braillience
           </span>
