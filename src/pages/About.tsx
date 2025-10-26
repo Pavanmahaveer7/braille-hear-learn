@@ -115,10 +115,7 @@ const About = () => {
                         <Icon className="h-12 w-12 text-white" aria-hidden="true" />
                       </div>
                     </div>
-                    <h3 className="mb-1 text-xl font-semibold text-foreground">{member.name}</h3>
-                    <Badge variant="secondary" className="mb-3">
-                      {member.role}
-                    </Badge>
+                    <h3 className="mb-3 text-xl font-semibold text-foreground">{member.name}</h3>
                     <p className="mb-4 text-sm text-muted-foreground">{member.bio}</p>
                     <div className="flex justify-center gap-2">
                       <Button size="icon" variant="ghost" asChild>
