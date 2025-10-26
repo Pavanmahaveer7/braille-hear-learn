@@ -12,11 +12,14 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src={logo} 
-                alt="Braillience Logo" 
-                className="h-14 w-14 object-contain"
-              />
+              <div className="h-14 w-14 rounded-lg overflow-hidden bg-background/50 backdrop-blur-sm p-2">
+                <img 
+                  src={logo} 
+                  alt="Braillience Logo" 
+                  className="h-full w-full object-contain"
+                  style={{ mixBlendMode: 'multiply' }}
+                />
+              </div>
               <span className="text-lg font-bold text-foreground">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">
