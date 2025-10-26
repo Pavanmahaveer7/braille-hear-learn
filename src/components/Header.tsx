@@ -70,7 +70,7 @@ export const Header = () => {
           <img 
             src={logo} 
             alt="Braillience Logo" 
-            className="h-10 w-10 object-contain transition-transform hover:scale-105"
+            className="h-14 w-14 object-contain transition-transform hover:scale-105"
           />
           <span className="hidden text-xl font-bold text-foreground sm:inline-block">
             Braillience
