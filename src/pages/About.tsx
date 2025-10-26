@@ -6,25 +6,25 @@ import { Github, Linkedin, Mail, Code2, Brain, Palette, Database } from "lucide-
 const About = () => {
   const team = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Bilal",
       role: "AI/ML Engineer",
-      bio: "PhD in Computer Science with focus on natural language processing. Passionate about making AI accessible and beneficial for all.",
+      bio: "Specializes in natural language processing and AI-powered content generation. Passionate about making AI accessible for all.",
       icon: Brain,
     },
     {
-      name: "Marcus Johnson",
+      name: "Pavan",
       role: "Full-Stack Developer",
-      bio: "8 years of experience building inclusive web applications. Dedicated to creating technology that serves everyone.",
+      bio: "Expert in building inclusive web applications. Dedicated to creating technology that serves everyone.",
       icon: Code2,
     },
     {
-      name: "Elena Rodriguez",
+      name: "Arnav",
       role: "UX/Accessibility Designer",
-      bio: "Specialist in accessible design with lived experience of visual impairment. Ensuring every pixel serves a purpose.",
+      bio: "Specialist in accessible design and user experience. Ensuring every interaction serves a purpose.",
       icon: Palette,
     },
     {
-      name: "James Kim",
+      name: "Ragav",
       role: "Backend Engineer",
       bio: "Expert in scalable systems and voice technology integration. Building the infrastructure for accessible education.",
       icon: Database,
