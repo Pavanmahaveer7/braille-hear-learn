@@ -12,7 +12,7 @@ import {
   Users,
   Trophy,
 } from "lucide-react";
-import brailleKeyboard from "@/assets/braille-keyboard-hero.jpg";
+import brailleDevices from "@/assets/braille-devices-hero.jpg";
 
 const Landing = () => {
   return (
@@ -23,7 +23,7 @@ const Landing = () => {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <img 
-              src={brailleKeyboard} 
+              src={brailleDevices} 
               alt="" 
               className="h-full w-full object-cover opacity-40 mix-blend-soft-light"
               aria-hidden="true"
