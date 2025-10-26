@@ -6,26 +6,18 @@ const About = () => {
   const team = [
     {
       name: "Bilal",
-      role: "AI/ML Engineer",
-      bio: "Specializes in natural language processing and AI-powered content generation. Passionate about making AI accessible for all.",
       icon: Brain,
     },
     {
       name: "Pavan",
-      role: "Full-Stack Developer",
-      bio: "Expert in building inclusive web applications. Dedicated to creating technology that serves everyone.",
       icon: Code2,
     },
     {
       name: "Arnav",
-      role: "UX/Accessibility Designer",
-      bio: "Specialist in accessible design and user experience. Ensuring every interaction serves a purpose.",
       icon: Palette,
     },
     {
       name: "Ragav",
-      role: "Backend Engineer",
-      bio: "Expert in scalable systems and voice technology integration. Building the infrastructure for accessible education.",
       icon: Database,
     },
   ];
@@ -103,8 +95,7 @@ const About = () => {
                         <Icon className="h-12 w-12 text-white" aria-hidden="true" />
                       </div>
                     </div>
-                    <h3 className="mb-3 text-xl font-semibold text-foreground">{member.name}</h3>
-                    <p className="mb-4 text-sm text-muted-foreground">{member.bio}</p>
+                    <h3 className="mb-4 text-xl font-semibold text-foreground">{member.name}</h3>
                     <div className="flex justify-center gap-2">
                       <Button size="icon" variant="ghost" asChild>
                         <a href="#" aria-label={`${member.name} on LinkedIn`}>
