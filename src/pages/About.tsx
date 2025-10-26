@@ -27,13 +27,6 @@ const About = () => {
       <main id="main-content" className="container mx-auto px-4">
         {/* Hero Section */}
         <section className="mb-16 text-center">
-          <div className="mb-6 flex justify-center">
-            <img
-              src="https://img.shields.io/badge/Cal%20Hacks-12.0-blue?style=for-the-badge"
-              alt="Built for Cal Hacks 12.0"
-              className="h-10"
-            />
-          </div>
           <h1 className="mb-6 text-5xl font-bold text-foreground md:text-6xl animate-fade-in-up">
             Meet the Team Behind <span className="text-primary">Braillience</span>
           </h1>
@@ -53,9 +46,9 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-lg text-foreground/80">
                   <p>
-                    Braillience was born at <strong className="text-foreground">Cal Hacks 12.0</strong> from 
-                    a simple observation: while AI is revolutionizing education, blind and visually impaired 
-                    students are often left behind by the very technologies meant to help them learn.
+                    Braillience was born from a simple observation: while AI is revolutionizing education, 
+                    blind and visually impaired students are often left behind by the very technologies 
+                    meant to help them learn.
                   </p>
                   <p>
                     We asked ourselves: what if we could use AI not to replace human interaction, but to make 
@@ -63,7 +56,7 @@ const About = () => {
                     could be instantly transformed into an interactive, voice-guided learning experience?
                   </p>
                   <p>
-                    Over 48 hours, our team built the foundation for Braillience—a platform that combines 
+                    Our team built the foundation for Braillience—a platform that combines 
                     artificial intelligence, voice technology, and accessible design to create a seamless 
                     learning experience for blind students. But this is just the beginning of our journey.
                   </p>
@@ -145,7 +138,7 @@ const About = () => {
             </Button>
           </div>
           <p className="mt-8 text-sm text-white/70">
-            Join our community on Discord or Slack to connect with other users and contributors
+            Join our community to connect with other users and contributors
           </p>
         </section>
       </main>
