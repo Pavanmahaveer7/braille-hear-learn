@@ -19,13 +19,6 @@ export const Footer = () => {
             <p className="text-sm text-muted-foreground">
               Empowering accessible education through AI-driven learning.
             </p>
-            <div className="flex items-center space-x-2">
-              <img
-                src="https://img.shields.io/badge/Cal%20Hacks-12.0-blue?style=flat-square"
-                alt="Built for Cal Hacks 12.0"
-                className="h-5"
-              />
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -120,9 +113,6 @@ export const Footer = () => {
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
           <p>© {currentYear} Braillience. All rights reserved.</p>
-          <p className="mt-2">
-            Built with ❤️ for <span className="font-semibold text-primary">Cal Hacks 12.0</span>
-          </p>
         </div>
       </div>
     </footer>
