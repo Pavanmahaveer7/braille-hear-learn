@@ -12,15 +12,15 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="h-24 w-24 flex items-center justify-center overflow-hidden">
+              <div className="h-16 w-16 flex items-center justify-center bg-background rounded-lg shadow-sm border border-border">
                 <img 
                   src={logo} 
                   alt="Braillience Logo" 
-                  className="h-full w-full object-cover scale-150 drop-shadow-sm"
-                  style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+                  className="h-12 w-12 object-cover scale-150"
+                  style={{ filter: 'brightness(1.1) saturate(1.2)' }}
                 />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Braillience</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Braillience</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering accessible education through AI-driven learning.
