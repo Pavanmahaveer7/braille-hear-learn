@@ -12,7 +12,7 @@ import {
   Users,
   Trophy,
 } from "lucide-react";
-import brailleDots from "@/assets/braille-dots-hero.jpg";
+import brailleDots from "@/assets/braille-dots-only-hero.jpg";
 
 const Landing = () => {
   return (
