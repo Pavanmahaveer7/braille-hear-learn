@@ -35,12 +35,11 @@ const Landing = () => {
             </Badge>
             
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl animate-fade-in-up">
-              <span className="text-balance">Accessible Flashcard Learning</span>
+              <span className="text-balance">MEET Brilliance</span>
             </h1>
             
             <p className="mx-auto mb-8 max-w-3xl text-lg text-white/90 md:text-xl animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-              An AI-powered flashcard learning application designed specifically for blind college students, 
-              featuring voice navigation, automated content conversion, and screen reader compatibility.
+              Empowering blind students to learn through AI-powered voice-guided flashcards and accessible education.
             </p>
             
             <div className="mx-auto mb-12 flex max-w-md flex-col gap-4 sm:flex-row sm:justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>

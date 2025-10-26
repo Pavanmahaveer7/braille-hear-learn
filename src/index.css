@@ -22,13 +22,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    /* Primary - Deep Blue for trust and education */
-    --primary: 217 91% 45%;
+    /* Primary - Warm Amber for warmth and inclusivity */
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 60%;
+    --primary-glow: 35 95% 60%;
 
-    /* Secondary - Warm Orange for energy and accessibility */
-    --secondary: 24 95% 53%;
+    /* Secondary - Golden Yellow for brightness and hope */
+    --secondary: 45 93% 47%;
     --secondary-foreground: 0 0% 100%;
 
     /* Success - Vibrant Green */
@@ -39,8 +39,8 @@ All colors MUST be HSL.
     --muted: 210 20% 88%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent - Purple for highlights */
-    --accent: 262 83% 58%;
+    /* Accent - Terracotta for tactile warmth */
+    --accent: 15 85% 55%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive - Clear Red */
@@ -50,15 +50,15 @@ All colors MUST be HSL.
     /* Borders & Inputs */
     --border: 214 32% 85%;
     --input: 214 32% 85%;
-    --ring: 217 91% 45%;
+    --ring: 25 95% 53%;
 
     /* Border Radius */
     --radius: 0.75rem;
 
     /* Gradients for visual interest */
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 45%), hsl(262 83% 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 93% 47%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 96%));
-    --gradient-accent: linear-gradient(90deg, hsl(24 95% 53%), hsl(33 100% 50%));
+    --gradient-accent: linear-gradient(90deg, hsl(25 95% 53%), hsl(15 85% 55%));
     
     /* Shadows for elevation */
     --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
@@ -91,10 +91,10 @@ All colors MUST be HSL.
     --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 25 95% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 24 95% 58%;
+    --secondary: 45 93% 52%;
     --secondary-foreground: 0 0% 100%;
 
     --success: 142 76% 45%;
@@ -103,7 +103,7 @@ All colors MUST be HSL.
     --muted: 217 33% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 262 83% 65%;
+    --accent: 15 85% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 50%;
@@ -111,7 +111,7 @@ All colors MUST be HSL.
 
     --border: 217 33% 25%;
     --input: 217 33% 25%;
-    --ring: 217 91% 60%;
+    --ring: 25 95% 58%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -224,15 +224,15 @@ All colors MUST be HSL.
   @keyframes pulse-ring {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 hsl(217 91% 45% / 0.7);
+      box-shadow: 0 0 0 0 hsl(25 95% 53% / 0.7);
     }
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px hsl(217 91% 45% / 0);
+      box-shadow: 0 0 0 10px hsl(25 95% 53% / 0);
     }
     100% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 hsl(217 91% 45% / 0);
+      box-shadow: 0 0 0 0 hsl(25 95% 53% / 0);
     }
   }
 
