@@ -157,25 +157,27 @@ const Signup = () => {
 
             {/* Role Selection */}
             <div className="space-y-3">
-              <Label>I am a</Label>
-              <RadioGroup
-                value={formData.role}
-                onValueChange={handleRoleChange}
-                className="flex gap-4"
-              >
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="student" id="student" />
-                  <Label htmlFor="student" className="cursor-pointer">
-                    Student
-                  </Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="professor" id="professor" />
-                  <Label htmlFor="professor" className="cursor-pointer">
-                    Professor
-                  </Label>
-                </div>
-              </RadioGroup>
+              <Label>{preselectedRole === "professor" ? "I am Professor" : "I am a"}</Label>
+              {!preselectedRole && (
+                <RadioGroup
+                  value={formData.role}
+                  onValueChange={handleRoleChange}
+                  className="flex gap-4"
+                >
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="student" id="student" />
+                    <Label htmlFor="student" className="cursor-pointer">
+                      Student
+                    </Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="professor" id="professor" />
+                    <Label htmlFor="professor" className="cursor-pointer">
+                      Professor
+                    </Label>
+                  </div>
+                </RadioGroup>
+              )}
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">

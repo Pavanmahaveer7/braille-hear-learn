@@ -12,6 +12,7 @@ import {
   Trophy,
 } from "lucide-react";
 import brailleDots from "@/assets/braille-dots-only-hero.jpg";
+import logo from "@/assets/logo.png";
 
 const Landing = () => {
   return (
@@ -92,8 +93,13 @@ const Landing = () => {
 
               <Card className="hover-lift">
                 <CardContent className="p-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
-                    <Mic className="h-6 w-6 text-secondary" aria-hidden="true" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 overflow-hidden">
+                    <img 
+                      src={logo} 
+                      alt="" 
+                      className="h-full w-full object-cover scale-150" 
+                      aria-hidden="true"
+                    />
                   </div>
                   <h3 className="mb-2 text-xl font-semibold">Voice-Guided Learning</h3>
                   <p className="text-muted-foreground">
@@ -151,7 +157,7 @@ const Landing = () => {
                 </div>
 
                 <div className="flex flex-col gap-6 md:flex-row md:items-center">
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-white">
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-secondary text-2xl font-bold text-secondary-foreground">
                     2
                   </div>
                   <div className="flex-1">
