@@ -87,6 +87,44 @@ const Mission = () => {
           </p>
         </section>
 
+        {/* Origin Story */}
+        <section className="mb-20">
+          <Card className="overflow-hidden border-primary/20">
+            <CardContent className="p-8 md:p-12 bg-gradient-to-br from-primary/5 to-accent/5">
+              <h2 className="mb-6 text-3xl font-bold text-foreground text-center">How It All Began</h2>
+              <div className="space-y-4 text-lg text-foreground/80 leading-relaxed">
+                <p>
+                  The journey of Braillience started with a discovery. <strong className="text-foreground">Arnav</strong>, 
+                  while researching accessibility in education, came across a groundbreaking ACM paper 
+                  that explored the challenges faced by Braille language learners in the digital age.
+                </p>
+                <p>
+                  The paper revealed a stark reality: while technology had revolutionized education for 
+                  most students, those who relied on Braille were being left behind. Traditional learning 
+                  materials weren't easily convertible, and existing solutions were often expensive, 
+                  cumbersome, or simply inaccessible.
+                </p>
+                <p>
+                  Inspired by this research, Arnav brought an idea to the team: what if we could use 
+                  artificial intelligence to bridge this gap? What if we could create a platform that 
+                  automatically transforms any educational content into an accessible, voice-guided 
+                  learning experience?
+                </p>
+                <p>
+                  The team—<strong className="text-foreground">Bilal, Pavan, Arnav, and Ragav</strong>—immediately 
+                  saw the potential. Together, we began building Braillience: a platform that combines 
+                  AI-powered content generation, voice technology, and accessible design to empower 
+                  blind students with the same educational opportunities as their sighted peers.
+                </p>
+                <p className="text-primary font-semibold">
+                  From an academic paper to a working platform, Braillience represents our commitment 
+                  to turning research into real-world impact.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Impact Stats */}
         <section className="mb-20" aria-labelledby="impact-heading">
           <h2 id="impact-heading" className="sr-only">Our Impact</h2>
@@ -154,11 +192,6 @@ const Mission = () => {
             impaired students have the same opportunities to excel as their peers. 
             Through Braillience, we're taking the first steps toward that future.
           </p>
-          <div className="mt-8">
-            <Badge variant="secondary" className="bg-white/20 text-white hover:bg-white/30">
-              Built for Cal Hacks 12.0
-            </Badge>
-          </div>
         </section>
       </main>
     </div>
