@@ -1,9 +1,7 @@
-// Authentication Service - Mock API calls for now
-// TODO: Replace with actual API integration
-
+// Authentication Service - Backend API Integration
 import { User, UserRole } from "@/types";
 
-const MOCK_DELAY = 1000;
+const API_BASE_URL = "http://localhost:3001/api";
 
 interface LoginCredentials {
   email: string;
@@ -18,121 +16,99 @@ interface SignupData extends LoginCredentials {
   department?: string;
 }
 
-// Mock JWT token
-const generateMockToken = (user: User): string => {
-  return `mock_token_${user.id}_${Date.now()}`;
-};
+interface ApiResponse<T> {
+  success: boolean;
+  token?: string;
+  user?: T;
+  error?: string;
+  data?: T;
+}
 
 export const authService = {
   async login(credentials: LoginCredentials): Promise<{ user: User; token: string }> {
-    console.log("[API] POST /api/auth/login", credentials);
-    
-    await new Promise(resolve => setTimeout(resolve, MOCK_DELAY));
+    const response = await fetch(`${API_BASE_URL}/auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(credentials),
+    });
 
-    // Mock validation
-    if (!credentials.email || !credentials.password) {
-      throw new Error("Email and password are required");
+    const data: ApiResponse<User> = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.error || "Login failed");
     }
 
-    // Mock successful login
-    const mockUser: User = {
-      id: "user_" + Math.random().toString(36).substr(2, 9),
-      name: credentials.email.includes("professor") ? "Dr. Sarah Johnson" : "Alex Thompson",
-      email: credentials.email,
-      role: credentials.email.includes("professor") ? "professor" : "student",
-      phone: "+1-555-0123",
-      institution: "UC Berkeley",
-      department: "Computer Science",
-      preferences: {
-        timezone: "America/Los_Angeles",
-        voicePreference: "female",
-        callReminders: true,
-      },
-      createdAt: new Date().toISOString(),
-    };
+    if (!data.token || !data.user) {
+      throw new Error("Invalid response from server");
+    }
 
-    const token = generateMockToken(mockUser);
-    
-    return { user: mockUser, token };
+    return { user: data.user, token: data.token };
   },
 
-  async signup(data: SignupData): Promise<{ user: User; token: string }> {
-    console.log("[API] POST /api/auth/register", data);
-    
-    await new Promise(resolve => setTimeout(resolve, MOCK_DELAY));
-
-    // Mock validation
-    if (!data.email || !data.password || !data.name) {
-      throw new Error("All fields are required");
-    }
-
-    if (data.password.length < 8) {
-      throw new Error("Password must be at least 8 characters");
-    }
-
-    // Mock successful signup
-    const mockUser: User = {
-      id: "user_" + Math.random().toString(36).substr(2, 9),
-      name: data.name,
-      email: data.email,
-      role: data.role,
-      phone: data.phone,
-      institution: data.institution,
-      department: data.department,
-      preferences: {
-        timezone: "America/Los_Angeles",
-        voicePreference: "female",
-        callReminders: true,
+  async signup(signupData: SignupData): Promise<{ user: User; token: string }> {
+    const response = await fetch(`${API_BASE_URL}/auth/register`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-      createdAt: new Date().toISOString(),
-    };
+      body: JSON.stringify(signupData),
+    });
 
-    const token = generateMockToken(mockUser);
-    
-    return { user: mockUser, token };
+    const data: ApiResponse<User> = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.error || "Registration failed");
+    }
+
+    if (!data.token || !data.user) {
+      throw new Error("Invalid response from server");
+    }
+
+    return { user: data.user, token: data.token };
   },
 
   async logout(): Promise<void> {
-    console.log("[API] POST /api/auth/logout");
-    await new Promise(resolve => setTimeout(resolve, 500));
-    // Clear local storage handled by caller
+    // JWT-based auth doesn't need server-side logout
+    // Token removal is handled by AuthContext
+    return Promise.resolve();
   },
 
   async verifyToken(token: string): Promise<User | null> {
-    console.log("[API] GET /api/auth/verify");
-    
-    // Mock token validation
-    if (!token || !token.startsWith("mock_token_")) {
+    try {
+      const response = await fetch(`${API_BASE_URL}/auth/verify`, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        return null;
+      }
+
+      const data: ApiResponse<User> = await response.json();
+      return data.user || null;
+    } catch (error) {
+      console.error("Token verification failed:", error);
       return null;
     }
-
-    // Mock user retrieval from token
-    const mockUser: User = {
-      id: "user_verified",
-      name: "Verified User",
-      email: "user@example.com",
-      role: "student",
-      phone: "+1-555-0123",
-      preferences: {
-        timezone: "America/Los_Angeles",
-        voicePreference: "female",
-        callReminders: true,
-      },
-      createdAt: new Date().toISOString(),
-    };
-
-    return mockUser;
   },
 
   async resetPassword(email: string): Promise<void> {
-    console.log("[API] POST /api/auth/reset-password", { email });
-    await new Promise(resolve => setTimeout(resolve, MOCK_DELAY));
-    
-    if (!email) {
-      throw new Error("Email is required");
-    }
+    const response = await fetch(`${API_BASE_URL}/auth/reset-password`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
 
-    // Mock success
-    console.log("Password reset email sent (mock)");
+    const data: ApiResponse<void> = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.error || "Password reset failed");
+    }
   },
 };
