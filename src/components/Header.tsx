@@ -67,7 +67,7 @@ export const Header = () => {
       
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center space-x-3 transition-all hover:opacity-80" aria-label="Braillience Home">
-          <div className="h-12 w-12 flex items-center justify-center overflow-hidden">
+          <div className="h-12 w-12 flex items-center justify-center overflow-hidden bg-background rounded-sm">
             <img 
               src={logo} 
               alt="Braillience Logo" 
